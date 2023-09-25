@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berita Populer</title>
+
+    <!-- link cdn/online css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- nabar -->
+    <nav class="navbar no-gutters bg-info fixed-top mb-2">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <h3>Berita.com</h3>
+        </a>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    
+
+    <!-- membuat baris yang membagi 2 kolom sidebar dan konten -->
+    <div class="row no-gutters mt-5">
+      <!-- sidebar | menggunakan colom 2 -->
+      <div class="col-md-2 bg-dark no-gutters mt-3">
+        <ul class="nav flex-column ">
+          <li class="nav-item mt-3">
+            <a class="nav-link active text-white text-center mt-3" aria-current="page" href="#"><i class='bx bx-home-alt m-2'></i>Dasboard</a><hr class="text-white">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-center" href="#"><i class='bx bxs-basketball m-2'></i>Olahraga</a><hr class="text-white">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-center" href="#"><i class='bx bx-buildings m-2'></i>Politik</a><hr class="text-white">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-center" href="#"><i class='bx bxs-happy m-2'></i>Hiburan</a><hr class="text-white">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-center" href="#"><i class='bx bxs-t-shirt m-2'></i>Fashion</a><hr class="text-white">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-center" href="#"><i class='bx bx-desktop m-2'></i>Elektronik</a><hr class="text-white">
+          </li>
+          <li class="nav-item mb-4">
+            <a class="nav-link text-white text-center" href="#"><i class='bx bxs-movie-play m-2'></i>Film</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end sidebar -->
+
+      <!-- konten | menggunakan kolom 10 -->
+      <div class="col-md-10 bg-secondary no-gutters mt-3" style="width: auto;">
+
+          <!-- menambahkan image carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide mt-3">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <!-- menambahkan rounded di class image carousel-->
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="img/GAB/banner/banner2.jpg" class="d-block w-100" alt="..." style="height: 300px; width: 100%;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/GAB/banner/banner3.jpg" class="d-block w-100" alt="..." style="height: 300px; width: 100%;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/GAB/banner/banner4.jpg" class="d-block w-100" alt="..." style="height: 300px; width: 100%;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- membuat tulisan trending topik dengan menggunakan button -->
+        <div class="d-grid mt-1">
+          <button class="btn btn-info text-white" type="button"><h4>Trending Topik</h4></button>
+        </div>
+        <!-- end trending -->
+
+        <!-- membuat baris pertama untuk 4 buah kolom berita -->
+        <div class="row pt-2">
+          <!-- membuat kolom 1 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- membuat kolom 2 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- membuat kolom 3 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- membuat kolom 4 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- membuat baris kedua untuk 4 buah kolom berita -->
+        <div class="row pt-3">
+          <!-- membuat kolom 1 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- membuat kolom 2 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- membuat kolom 3 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- membuat kolom 4 -->
+          <div class="col-3">
+            <div class="card" style="width: 16rem;">
+              <img src="img/GAB/motor/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <footer class="bg-dark text-white mt-3 rounded" style="width: auto;">
+          <span>Created By <a href="">KELOMPOK 2</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+      </footer>
+            
+      </div>
+      <!-- end konten -->
+
+    </div>
+    <!-- end dari baris yang membagi sidebar dan konten -->
+
+
+    
+
+    <!-- link cdn/online javascript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
